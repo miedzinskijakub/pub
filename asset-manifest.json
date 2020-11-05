@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/pub/static/css/main.8c0b96e2.chunk.css",
+    "main.js": "/pub/static/js/main.25c270f6.chunk.js",
+    "main.js.map": "/pub/static/js/main.25c270f6.chunk.js.map",
+    "runtime-main.js": "/pub/static/js/runtime-main.89e547a4.js",
+    "runtime-main.js.map": "/pub/static/js/runtime-main.89e547a4.js.map",
+    "static/js/2.4f2014f2.chunk.js": "/pub/static/js/2.4f2014f2.chunk.js",
+    "static/js/2.4f2014f2.chunk.js.map": "/pub/static/js/2.4f2014f2.chunk.js.map",
+    "index.html": "/pub/index.html",
+    "precache-manifest.1101425ec1489b920d26eab1b76f4652.js": "/pub/precache-manifest.1101425ec1489b920d26eab1b76f4652.js",
+    "service-worker.js": "/pub/service-worker.js",
+    "static/css/main.8c0b96e2.chunk.css.map": "/pub/static/css/main.8c0b96e2.chunk.css.map",
+    "static/js/2.4f2014f2.chunk.js.LICENSE.txt": "/pub/static/js/2.4f2014f2.chunk.js.LICENSE.txt",
+    "static/media/BaroQ.svg": "/pub/static/media/BaroQ.a11f49fa.svg",
+    "static/media/back2.jpg": "/pub/static/media/back2.c8d7e20f.jpg",
+    "static/media/desc.png": "/pub/static/media/desc.c4701ee0.png",
+    "static/media/drink1.jpg": "/pub/static/media/drink1.35b902a3.jpg",
+    "static/media/drink2.jpg": "/pub/static/media/drink2.24e4528b.jpg",
+    "static/media/drink3.jpg": "/pub/static/media/drink3.d51db76a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.89e547a4.js",
+    "static/js/2.4f2014f2.chunk.js",
+    "static/css/main.8c0b96e2.chunk.css",
+    "static/js/main.25c270f6.chunk.js"
+  ]
+}
