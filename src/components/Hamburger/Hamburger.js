@@ -6,7 +6,11 @@ const StyledHamburger = styled.button`
     border: none;
     background: none;
     z-index: 9999;
+    
+    ${({theme}) => theme.mq.huge}{
+        padding: 20px;
 
+    }
 `;
 
     const InnerHamburger = styled.div`
@@ -37,7 +41,44 @@ const StyledHamburger = styled.button`
         top: 6px;
         transform: translateY(${({isOpen}) => isOpen ? '-6px' : '0'}) rotate(${({isOpen}) => isOpen ? '-45deg' : '0'});
     }
+    ${({theme}) => theme.mq.tablet}{
+        width: 35px;
+        height: 3px;
+        ::after, ::before{
+            width: 35px;
+            height: 3px;
 
+    }
+    height: 4px;
+    ::before{
+        top: -10px;
+        transform: translateY(${({isOpen}) => isOpen ? '10px' : '0'}) rotate(${({isOpen}) => isOpen ? '45deg' : '0'});
+
+    }
+    ::after{
+        top: 10px;
+        transform: translateY(${({isOpen}) => isOpen ? '-10px' : '0'}) rotate(${({isOpen}) => isOpen ? '-45deg' : '0'});
+
+    }
+    ${({theme}) => theme.mq.huge}{
+        width: 40px;
+        height: 4px;
+        ::after, ::before{
+            width: 40px;
+            height: 4px;
+
+    }
+    height: 4px;
+    ::before{
+        top: -10px;
+        transform: translateY(${({isOpen}) => isOpen ? '10px' : '0'}) rotate(${({isOpen}) => isOpen ? '45deg' : '0'});
+
+    }
+    ::after{
+        top: 10px;
+        transform: translateY(${({isOpen}) => isOpen ? '-10px' : '0'}) rotate(${({isOpen}) => isOpen ? '-45deg' : '0'});
+
+    }
     `;
 
 const Hamburger = ({isOpen, ...props}) =>(

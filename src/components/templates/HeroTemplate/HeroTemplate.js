@@ -13,7 +13,9 @@ const StyledWrapper = styled.div`
     background-size: cover;
     background-attachment: fixed;
 
-
+    ${({theme}) => theme.mq.huge}{
+        margin-top: 94.7px;
+    }
 `//PARALAXA ^^^^^^^
 
 const Information = styled.div`
@@ -25,8 +27,17 @@ const Information = styled.div`
     line-height: 1.8em;
     font-size: 12px;
     font: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+    ${({theme}) => theme.mq.tablet}{
+        font-size: 20px;
 
-  
+    }
+    ${({theme}) => theme.mq.desktop}{
+        font-size: 20px;
+    }
+    ${({theme}) => theme.mq.huge}{
+        font-size: 1.5rem;
+
+    }
     `
 const Main = styled.div`
 position: relative;
@@ -51,6 +62,9 @@ ${({theme}) => theme.mq.tablet}{
     font-size: 30px;
 
 }
+${({theme}) => theme.mq.huge}{
+    font-size: 2rem;  
+}
 `
 
 const Form = styled.div`
@@ -58,14 +72,16 @@ margin-top: 15%;
 text-align: center;
 font-family: 'Playfair Display', serif;
 font-size: 3rem;
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items: center;
-align-content: center;
+
 
 ${({theme}) => theme.mq.tablet}{
      margin-top: 20%;   
+}
+${({theme}) => theme.mq.desktop}{
+    margin-top: 10%;   
+}
+${({theme}) => theme.mq.hug}{
+    margin-top: 10%;   
 }
 `
 const Inputs = styled.input`
@@ -76,6 +92,17 @@ color: #2F2E2E;
 ${({theme}) => theme.mq.tablet}{
     height: 50px;
     width: 80%;  
+    font-size: 20px;
+ 
+}
+${({theme}) => theme.mq.desktop}{
+    
+    width: 20%;
+}
+${({theme}) => theme.mq.huge}{
+    font-size: 2rem;
+    width: 20%;
+
 }
 `
 const Select = styled.select`
@@ -87,7 +114,17 @@ color: #2F2E2E;
 ${({theme}) => theme.mq.tablet}{
         height: 50px;
         width: 80%;  
-    
+        font-size: 20px;
+
+}
+${({theme}) => theme.mq.desktop}{
+    width: 20%;
+
+}
+${({theme}) => theme.mq.huge}{
+    width: 20%;
+
+    font-size: 2rem;
 }
 `
 const Book = styled.button`
@@ -103,16 +140,38 @@ outline: inherit;
 ${({theme}) => theme.mq.tablet}{
     height: 50px;
     width: 80%;  
+    font-size: 20px;
+
+}
+${({theme}) => theme.mq.desktop}{
+    width: 20%;
+
+}
+${({theme}) => theme.mq.huge}{
+    width: 20%;
+
+    font-size: 2rem;
+}
+`
+const Control = styled.div`
+${({theme}) => theme.mq.desktop}{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+align-content: center;
 }
 
+    
 `
-
 const Hero = () =>(
 
     <StyledWrapper>
 
         <Information>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.    |   Lorem ipsum dolor 
+        500 Terry Francois St. San Francisco, CA 94158    |    Open from 6pm to 2am 
+
+
         </Information>
 
         <Main>
@@ -123,7 +182,8 @@ const Hero = () =>(
                 </Desc>
 
             <Form>
-                <div>Reservations</div>
+            <div>Reservations</div>
+                <Control>
                 <Inputs type="datetime-local"/>
                 <Select defaultValue={'DEFAULT'}>
                     <option value="DEFAULT" disabled >Party size</option>
@@ -133,7 +193,7 @@ const Hero = () =>(
                     <option>4 person</option>
                     </Select>
                 <Book>Book Now</Book>
-
+                </Control>
             </Form>
 
         </Main>

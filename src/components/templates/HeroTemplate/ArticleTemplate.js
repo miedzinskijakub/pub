@@ -24,9 +24,15 @@ const ContD = styled.img`
         width: 50%;
         height: 400px;
         order: 2;
-
     }
-    
+    ${({theme}) => theme.mq.huge}{
+       height: 500px;
+    }
+    ${({theme}) => theme.mq.full}{
+        height: 600px;
+    }
+    height: 600px;
+
 `
 const Division = styled.div`
     height: 400px;
@@ -37,6 +43,12 @@ const Division = styled.div`
         order: 1;
 
 }
+${({theme}) => theme.mq.huge}{
+    height: 500px;
+ }
+ ${({theme}) => theme.mq.full}{
+    height: 600px;
+ }
 `
 const Challange = styled.h1`
     color: white;
@@ -45,20 +57,29 @@ const Challange = styled.h1`
     line-height: 50px;
     margin-bottom: 15px;
     font-family: 'Playfair Display', serif;
-
+    ${({theme}) => theme.mq.huge}{
+        font-size: 6rem;
+    }
 `
 const Hej = styled.span`
     margin-top: 20%;
     font-size: 1.5rem;
     color: #2F2E2E;
+    ${({theme}) => theme.mq.huge}{
+        font-size: 3rem;
 
+    }
 `
 
 const Spand = styled.p`
     margin-top: 20%;
     font-size: 2rem;
     color: #2F2E2E;
-
+    ${({theme}) => theme.mq.huge}{
+        padding: 50px;
+        margin-top: 10%;
+        font-size: 2rem;
+    }
 `
 
 const Join = styled.div`
@@ -79,6 +100,10 @@ const Small = styled.p`
         text-align:center;
         font-size: 1.5rem;
         }
+        ${({theme}) => theme.mq.huge}{
+           font-size: 2rem;
+            }
+         }
 `
 const Challangee = styled.h1`
     font-weight:normal;
@@ -89,7 +114,9 @@ const Challangee = styled.h1`
         text-align:center;
         font-size: 5rem;
         }
-
+        ${({theme}) => theme.mq.huge}{
+            font-size: 5rem;
+         }
 `
 const Inputs = styled.input`
 width: 90%;
@@ -98,12 +125,25 @@ margin: 5px;
 color: #2F2E2E;
     ::placeholder{
         text-align: center;
+        font-size: 20px;
     }
     ${({theme}) => theme.mq.tablet}{
         border-style: solid;
         height: 50px;
         width: 70%;
+
+        ::placeholder{
+            font-size: 20px;
+        }
     }
+    ${({theme}) => theme.mq.huge}{
+        width: 30%;
+        height: 50px;
+
+        ::placeholder{
+            font-size: 2rem;
+        }
+     }
 `
 const Book = styled.button`
 width: 90%;
@@ -119,8 +159,15 @@ text-align: center;
     ${({theme}) => theme.mq.tablet}{
         height: 50px;
         width: 70%;
+        font-size: 20px;
+
     }
 }
+${({theme}) => theme.mq.huge}{
+    width: 20%;
+    font-size: 2rem;
+    height: 50px;
+ }
 `
 const WaleDriny1 = styled.img`
 ${({theme}) => theme.mq.tablet}{

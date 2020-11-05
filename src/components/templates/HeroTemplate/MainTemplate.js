@@ -14,6 +14,9 @@ const Main = styled.main`
         margin-top: 50px;
         margin-bottom: 100px;
     }
+    ${({theme}) => theme.mq.tablet}{
+        padding: 50px;
+    }
 `
 
 const AboutUs = styled.div`
@@ -26,6 +29,9 @@ const AboutUs = styled.div`
     text-align: center;
     ${({theme}) => theme.mq.tablet}{
         font-size: 60px;
+    }
+    ${({theme}) => theme.mq.huge}{
+        font-size: 7rem;
     }
 `
 const Explore = styled.button`
@@ -47,14 +53,29 @@ ${({theme}) => theme.mq.tablet}{
     height: 50px;
     width: 70%; 
 }
+${({theme}) => theme.mq.desktop}{
+    width: 30%;
+}
+${({theme}) => theme.mq.huge}{
+    font-size: 2rem;
+    width: 20%;
+    height: 70px;
+}
 `
 const Abo = styled.span`
+color: #2F2E2E;
+line-height: 1.6em;
+font-family: "Times New Roman", Times, serif;
+
 ${({theme}) => theme.mq.tablet}{
-    margin-left: 30px;
-    margin-right: 30px;
+
 
         padding: 30px;
         font-size: 20px;
+}
+${({theme}) => theme.mq.huge}{
+    font-size: 2.5rem;
+
 }
 `
 

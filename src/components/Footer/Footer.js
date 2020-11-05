@@ -9,11 +9,17 @@ const StyledWrapper = styled.div`
     padding: 50px;
     text-align: center;
     
-    
+    ${({theme}) => theme.mq.tablet}{
+        padding: 70px;
+
+    }
 `
 const Information = styled.p`
     font-size: 1.4rem;
     margin-bottom: 10px;
+    ${({theme}) => theme.mq.tablet}{
+    font-size: 2rem;
+    }
 `
 
 const Footer = () =>(

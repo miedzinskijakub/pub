@@ -25,7 +25,6 @@ const StyledWrapper = styled.div`
     transform: translate(${({isOpen}) => isOpen ? '0' : '100%'});
     transition: transform .25s ease-in-out;
 
- 
 `;
 
 const MenuLink = styled.p`
@@ -37,6 +36,13 @@ const MenuLink = styled.p`
     opacity: ${({ isOpen }) => isOpen ? '1' : '0'};
     transition: opacity .25s .20s ease-in-out;
 
+    ${({theme}) => theme.mq.desktop}{
+        font-size: 4rem;
+}
+${({theme}) => theme.mq.tablet}{
+    margin-top: 60px;
+    font-size: 4rem;
+    }
 `;
 
 

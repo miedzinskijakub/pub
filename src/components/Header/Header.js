@@ -16,14 +16,42 @@ const StyledWrapper = styled.div`
     justify-content: space-between;
     align-items: flex-start;
     background-color: white;
-    z-index: 9999;
+    z-index: 9999;  
+    ${({theme}) => theme.mq.tablet}{
+        align-items: center;
+
+        svg{
+            font-size: 30px;
+        }
+    }
+    ${({theme}) => theme.mq.desktop}{
+        svg{
+            font-size: 25px;
+        }
+}
+${({theme}) => theme.mq.huge}{
+    svg{
+        font-size: 40px;
+    }
+
+}
     `;
 
 const StyledLogo = styled(Logo)`
 position: relative;
 z-index: 9999;
-
+${({theme}) => theme.mq.tablet}{
+   width: 120px;
+}
+${({theme}) => theme.mq.desktop}{
+    width: 130px;
+}
+${({theme}) => theme.mq.huge}{
+    width: 200px;
+}
 `
+
+
 
 const Header = () =>{
 
